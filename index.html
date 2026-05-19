@@ -1,0 +1,238 @@
+<!-- ... existing code ... -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siti Web Veloci per Attività Locali | Pronti in 3 giorni di media</title>
+    <meta name="description" content="Realizzazione siti web veloci ed efficaci per ristoranti, B&B e stabilimenti balneari in soli 3 giorni di media. Ottimizzati per smartphone e pronti per l'estate.">
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN (Risolve il ReferenceError) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a', // slate-900 - Fiduciario e professionale
+                            light: '#f8fafc', // slate-50 - Sfondo pulito
+                            cta: '#f97316', // orange-500 - Alta conversione/Dinamico
+                            ctaHover: '#ea580c', // orange-600
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom utilities for subtle enhancements */
+        .glass-effect {
+            background: rgba(15, 23, 42, 0.85); /* Sfondo scuro per il menu */
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        /* Hide scrollbar for cleaner look if desired, keeping standard for now */
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation (Sticky) -->
+    <header class="fixed top-0 w-full z-50 glass-effect border-b border-slate-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo / Nome -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold tracking-tight text-white">
+                        Web<span class="text-brand-cta">Fast</span>.
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#vantaggi" class="text-sm font-medium text-slate-300 hover:text-brand-cta transition-colors">Perché Scegliermi</a>
+                    <a href="#portfolio" class="text-sm font-medium text-slate-300 hover:text-brand-cta transition-colors">I Miei Lavori</a>
+                    <a href="https://wa.me/393518560591" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-semibold rounded-full text-white bg-brand-cta hover:bg-brand-ctaHover transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                        Preventivo
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-grow pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden relative">
+        <!-- Decorazioni di sfondo per Dark Mode -->
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[120%] h-[800px] bg-gradient-to-b from-slate-800 to-transparent -z-10 rounded-b-[100%]"></div>
+        <div class="absolute top-20 right-10 w-64 h-64 bg-brand-cta/15 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute top-40 left-10 w-72 h-72 bg-blue-500/15 rounded-full blur-3xl -z-10"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-slate-800 text-slate-300 text-sm font-semibold mb-6 border border-slate-700 shadow-sm">
+                🔥 Speciale Estate 2026
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-8 leading-tight">
+                Siti Web ad <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cta to-orange-400">Alta Conversione</span> per la tua Attività.<br class="hidden sm:block"> 
+                Pronti in 3 giorni di media.
+            </h1>
+            <p class="mt-4 text-lg sm:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Preparati per la stagione estiva. Attrai più clienti nel tuo ristorante, B&B o stabilimento balneare con un sito web moderno, veloce e studiato per vendere, <strong class="text-white">senza alcuno stress tecnico.</strong>
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <!-- Primary CTA -->
+                <a href="https://wa.me/393518560591" target="_blank" rel="noopener noreferrer" class="group w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand-cta rounded-full hover:bg-brand-ctaHover transition-all shadow-xl hover:shadow-2xl hover:shadow-brand-cta/20 hover:-translate-y-1">
+                    <svg class="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    Richiedi un Preventivo su WhatsApp
+                </a>
+            </div>
+            <p class="mt-4 text-sm text-slate-500">Risposta rapida garantita.</p>
+        </div>
+    </main>
+
+    <!-- Sezione Vantaggi (Perché scegliermi) -->
+    <section id="vantaggi" class="py-20 bg-slate-900 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand-cta font-semibold tracking-wide uppercase text-sm">Perché affidarsi a me?</h2>
+                <p class="mt-2 text-3xl font-bold text-white sm:text-4xl">La soluzione perfetta per la tua attività locale</p>
+                <p class="mt-4 text-lg text-slate-400">Dimentica mesi di attesa e siti complicati. Offro un servizio chiavi in mano studiato per farti acquisire clienti da subito.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Vantaggio 1 -->
+                <div class="bg-slate-800 rounded-3xl p-8 text-center border border-slate-700 hover:border-slate-600 hover:shadow-2xl transition-all duration-300">
+                    <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-500/10 mb-6">
+                        <svg class="h-8 w-8 text-brand-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Consegna Lampo</h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        Il tempo è denaro. Dal momento in cui mi fornisci i materiali, il tuo sito sarà pronto e perfettamente funzionante online in <strong class="text-white font-semibold">3 giorni di media</strong>.
+                    </p>
+                </div>
+
+                <!-- Vantaggio 2 -->
+                <div class="bg-slate-800 rounded-3xl p-8 text-center border border-slate-700 hover:border-slate-600 hover:shadow-2xl transition-all duration-300">
+                    <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-blue-500/10 mb-6">
+                        <svg class="h-8 w-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Ottimizzazione Mobile</h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        L'80% dei tuoi clienti cerca dal telefono. Creo siti <strong class="text-white font-semibold">perfetti su smartphone</strong>, con pulsanti di chiamata e prenotazione a portata di pollice.
+                    </p>
+                </div>
+
+                <!-- Vantaggio 3 -->
+                <div class="bg-slate-800 rounded-3xl p-8 text-center border border-slate-700 hover:border-slate-600 hover:shadow-2xl transition-all duration-300">
+                    <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-500/10 mb-6">
+                        <svg class="h-8 w-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Zero Stress Tecnico</h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        Penso a tutto io: registrazione del dominio, hosting veloce e configurazione email. Tu non devi fare nulla, <strong class="text-white font-semibold">dedicati solo ai tuoi clienti.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Portfolio (I miei lavori) -->
+    <section id="portfolio" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div class="max-w-2xl">
+                    <h2 class="text-brand-cta font-semibold tracking-wide uppercase text-sm mb-2">I Miei Lavori</h2>
+                    <h3 class="text-3xl font-bold text-white sm:text-4xl">Ultimi Progetti Realizzati</h3>
+                    <p class="mt-4 text-lg text-slate-400">Esempi di attività locali che hanno già potenziato la loro presenza online e aumentato le prenotazioni.</p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <a href="https://wa.me/393518560591" class="text-brand-cta hover:text-brand-ctaHover font-semibold flex items-center group">
+                        Voglio un sito così
+                        <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Progetto 1 -->
+                <div class="group bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-700 cursor-pointer">
+                    <div class="aspect-w-16 aspect-h-11 overflow-hidden bg-slate-700">
+                        <img src="https://placehold.co/800x600/1e293b/f8fafc?text=Mockup+Ristorante" alt="Progetto Ristorante La Conchiglia" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-900/50 text-blue-300 border border-blue-800">Ristorazione</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 group-hover:text-brand-cta transition-colors">Ristorante La Conchiglia</h4>
+                        <p class="text-slate-400 text-sm">Sito web vetrina con menu digitale interattivo e modulo di prenotazione tavoli diretto via WhatsApp.</p>
+                    </div>
+                </div>
+
+                <!-- Progetto 2 -->
+                <div class="group bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-700 cursor-pointer">
+                    <div class="aspect-w-16 aspect-h-11 overflow-hidden bg-slate-700">
+                        <img src="https://placehold.co/800x600/1e293b/f8fafc?text=Mockup+B%26B" alt="Progetto B&B Vista Mare" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-900/50 text-green-300 border border-green-800">Ospitalità</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 group-hover:text-brand-cta transition-colors">B&B Vista Mare</h4>
+                        <p class="text-slate-400 text-sm">Design emozionale con ampie gallerie fotografiche, mappa interattiva e integrazione del sistema di booking.</p>
+                    </div>
+                </div>
+
+                <!-- Progetto 3 -->
+                <div class="group bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-700 cursor-pointer">
+                    <div class="aspect-w-16 aspect-h-11 overflow-hidden bg-slate-700">
+                        <img src="https://placehold.co/800x600/1e293b/f8fafc?text=Mockup+Lido" alt="Progetto Lido Soleggiato" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-900/50 text-orange-300 border border-orange-800">Stabilimento Balneare</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2 group-hover:text-brand-cta transition-colors">Lido Soleggiato</h4>
+                        <p class="text-slate-400 text-sm">Piattaforma veloce e colorata per mostrare i servizi spiaggia, listino prezzi e prenota ombrellone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / CTA Finale -->
+    <footer class="bg-black pt-20 pb-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Call to action finale -->
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
+                Pronto per riempire il tuo locale quest'estate?
+            </h2>
+            <p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">
+                Non aspettare che la concorrenza ti superi. Richiedi subito un preventivo gratuito e metti online la tua attività nei prossimi 3 giorni.
+            </p>
+            
+            <a href="https://wa.me/393518560591" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-brand-dark bg-white rounded-full hover:bg-slate-200 transition-all shadow-xl hover:shadow-2xl hover:shadow-white/10 transform hover:-translate-y-1 mb-16">
+                <svg class="w-6 h-6 mr-3 text-green-500" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                Scrivimi su WhatsApp
+            </a>
+
+            <!-- Divider -->
+            <div class="w-full border-t border-slate-800 mb-8"></div>
+
+            <!-- Copyright -->
+            <div class="flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+                <p>&copy; 2026 WebFast. Tutti i diritti riservati.</p>
+                <div class="mt-4 md:mt-0 space-x-4">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
