@@ -1,0 +1,13 @@
+# Visual sources
+
+- **Grain Gradient / Paper Shaders** — discovered through the 21st MCP catalog (`paper-design/grain-gradient`, ID 17835). Used in an earlier revision via the original `@paper-design/shaders-react@0.0.82` package, Apache-2.0. The final runtime uses a static CSS background to avoid a second WebGL renderer. The restricted 21st component source was not retrieved or used. [Original source](https://github.com/paper-design/shaders). License preserved in `vendor/PAPER-SHADERS-LICENSE.txt`.
+- **Panoramic Spread Hero**, daiwiikharihar — code retrieved through the authenticated 21st MCP, ID 30669. Used as the starting point for the project collection, with dark frames, buttons, local artwork and screenshots. The final collection removes the long sticky scroll and pointer-driven orbit in favor of native scrolling and direct project access. [Component](https://21st.dev/@daiwiikharihar/components/panoramic-spread-hero).
+- **Contribution Skyline** — source supplied by the user, adapted for local imports of daily ChatGPT activity.
+- **Geist**, **JetBrains Mono** and **IBM Plex Mono** — local WOFF2 files distributed through Fontsource under the SIL Open Font License. License files included beside the fonts. The final typography uses Geist sans for primary text and JetBrains Mono for technical labels; IBM Plex Mono remains in the supplied assets from the earlier revision.
+- **Darkmatter / Slate Dark / Amber Dark** — free themes inspected using 21st MCP for palette and type comparison. Darkmatter's Geist Mono is a reference, not the font used for the main text here: this project uses Geist sans and JetBrains Mono. The final palette and typography are customized; the site is not a verbatim implementation of those themes.
+- **Three.js 0.180.0** — MIT, license in `vendor/THREE-LICENSE.txt`.
+- PSP-inspired console geometry and project concept illustrations were authored in this workspace. The console is a prototype, not the Sketchfab model. The Volumetric Studio spotlight has been removed from the experience.
+- Meridiano and Padel Village images are screenshots captured from the public project URLs supplied by the user. Other project illustrations are explicitly labeled visual concepts.
+- **Portfolio research** — [Richard Ekwonye on Awwwards](https://www.awwwards.com/sites/richard-ekwonye-portfolio), [Clément Grellier on Awwwards](https://www.awwwards.com/sites/clement-grellier-portfolio), and [Dennis Snellenberg](https://dennissnellenberg.com/) informed the restrained dark palette, stronger typography and clearer project hierarchy. No source code or artwork was copied from these portfolios.
+
+No ChatGPT conversation exports or API keys are included in the website.
